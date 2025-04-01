@@ -1,6 +1,6 @@
 # SQL Data Warehouse Project
 
-This project demonstrates the end-to-end development of a modern data warehouse using **SQL Server** and follows the **Medallion Architecture**. It simulates integrating data from multiple business systems (ERP and CRM) into a centralized analytical store using ETL best practices, dimensional modeling, and SQL scripting.
+This project demonstrates the end-to-end development of a modern data warehouse using **SQL Server**. It follows the **Medallion Architecture** and simulates integrating data from multiple business systems (ERP and CRM) into a centralized analytical store using ETL best practices, dimensional modeling, and SQL scripting.
 
 ---
 
@@ -31,6 +31,6 @@ The solution is designed using a three-layered Medallion Architecture:
 ```mermaid
 flowchart TD
   A[ERP & CRM CSV Files] --> B[Bronze: Raw Staging Tables]
-  B --> C[Silver: Cleaned & Integrated Tables]
-  C --> D[Gold: Star Schema (Fact & Dimensions)]
-  D --> E[Analysis / BI Tools]
+  B --> C[Silver: Cleaned and Integrated Tables]
+  C --> D[Gold: Star Schema - Fact and Dimensions]
+  D --> E[BI Tools / Reporting Layer]
