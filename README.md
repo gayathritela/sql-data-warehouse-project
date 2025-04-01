@@ -86,6 +86,30 @@ This structure enables fast querying, supports Power BI/Tableau integrations, an
 
 ---
 
+```
+sql-data-warehouse-project/
+├── datasets/                         # Raw source data (ERP & CRM exports)
+│
+├── docs/                             # Architecture and modeling diagrams
+│   ├── data_architecture.png
+│   ├── data_flow.png
+│   ├── data_integration.png
+│   └── data_model.png
+│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
+│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
+│
+── scripts/                             # SQL scripts for ETL and transformations
+│   ├── bronze/                         # Scripts for extracting and loading raw data
+│   ├── silver/                         # Scripts for cleaning and transforming data
+│   ├── gold/                           # Scripts for creating analytical models
+│
+├── tests/                              # Test scripts and quality files
+│
+├── README.md                         # Main documentation
+└── LICENSE                           # MIT License
+```
+
+
 ## 🛠 Tools Used
 
 - **SQL Server Express** — Database engine for staging, transformations, and modeling  
